@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
 import { AppCommonModule } from './common/common.module';
 import { CommonModule } from '@angular/common';
+import { DashboardModule } from './dashboard/dashboard.module';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { CommonModule } from '@angular/common';
     MatSliderModule,
     AppCommonModule,
     CommonModule,
+    DashboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
