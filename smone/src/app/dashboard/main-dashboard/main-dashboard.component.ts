@@ -32,8 +32,8 @@ export class MainDashboardComponent implements OnInit {
       useTransformPositioning: true,
       mobileBreakpoint: 640,
       useBodyForBreakpoint: true,
-      minCols: 10,
-      maxCols: 100,
+      minCols: 7,
+      maxCols: 50,
       minRows: 1,
       maxRows: 100,
       maxItemCols: 100,
@@ -55,9 +55,9 @@ export class MainDashboardComponent implements OnInit {
       enableEmptyCellDrop: false,
       enableEmptyCellDrag: false,
       enableOccupiedCellDrop: false,
-      emptyCellDragMaxCols: 50,
+      emptyCellDragMaxCols: 2,
       emptyCellDragMaxRows: 50,
-      ignoreMarginInRow: false,
+      ignoreMarginInRow: true,
       draggable: {
           enabled: true,
         },
@@ -70,7 +70,7 @@ export class MainDashboardComponent implements OnInit {
         disablePushOnResize: false,
         pushDirections: { north: true, east: true, south: true, west: true },
         pushResizeItems: false,
-        displayGrid: DisplayGrid.Always,
+        displayGrid: DisplayGrid.None,
         disableWindowResize: false,
         disableWarnings: false,
         scrollToNewItems: false,
@@ -78,7 +78,7 @@ export class MainDashboardComponent implements OnInit {
 
     this.dashboard =[
       { cols: 4, rows: 1, y: 0, x: 0 },
-      { cols: 2, rows: 2, y: 0, x: 2, hasContent: true },
+      { cols: 2, rows: 2, y: 0, x: 2, hasContent: true , label:"hasContent"},
       {
         cols: 2,
         rows: 2,
