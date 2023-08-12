@@ -1,0 +1,11 @@
+<p>login works!</p>
+
+<div class="loginForm">
+    <input type="text" (keyup)="search(firstname.value)" name="firstname" #firstname>
+</div>
+
+<div class="clearfix"></div>
+<div class="searchresult">
+    <p>Searching user : </p>{{searchTerm}}
+</div>
+<button (click)="authenticate()">Login</button>
